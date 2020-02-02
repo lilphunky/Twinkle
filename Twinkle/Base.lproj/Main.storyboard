@@ -990,6 +990,7 @@
                     <connections>
                         <outlet property="birthdayPicker" destination="FIq-Fd-xzW" id="hPN-Ri-pE7"/>
                         <outlet property="birthtimePicker" destination="EsK-CD-xLO" id="ON4-dO-C5s"/>
+                        <outlet property="cityLabel" destination="siE-PK-a5A" id="BWY-A6-NMz"/>
                         <outlet property="emailField" destination="YHc-i9-SK0" id="eom-Oa-7rk"/>
                         <outlet property="firstName" destination="xcO-vl-CaZ" id="EWO-mh-2sP"/>
                         <outlet property="lastName" destination="tit-Rc-rOF" id="Tkp-xK-2In"/>

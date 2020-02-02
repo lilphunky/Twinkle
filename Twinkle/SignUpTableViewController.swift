@@ -20,6 +20,10 @@ class SignUpTableViewController: UITableViewController {
     @IBOutlet weak var passwordField: UITextField!
     @IBOutlet weak var birthdayPicker: UIDatePicker!
     @IBOutlet weak var birthtimePicker: UIDatePicker!
+    @IBOutlet weak var cityLabel: UILabel!
+    
+    var cityLat: Double = 0.0
+    var cityLong: Double = 0.0
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -43,6 +47,7 @@ class SignUpTableViewController: UITableViewController {
 
         // Display the autocomplete view controller.
         present(autocompleteController, animated: true, completion: nil)
+        
     }
     
     @IBAction func saveProfile(_ sender: Any) {
@@ -69,7 +74,9 @@ class SignUpTableViewController: UITableViewController {
                         ["first name": self.firstName.text!,
                          "last name": self.lastName.text!,
                          "birthday": strDate,
-                         "birthtime": strTime])
+                         "birthtime": strTime,
+                         "latitude": self.cityLat,
+                         "longitude": self.cityLong])
                 }
             }
         }
@@ -78,7 +85,14 @@ class SignUpTableViewController: UITableViewController {
     
     func fieldsNotEmpty() -> Bool {
         if firstName.text == "" || lastName.text == "" {
-            let alert = UIAlertController(title: "Profile not saved", message: "Please fill in your first and last name", preferredStyle: .alert)
+            let alert = UIAlertController(title: "Profile not saved", message: "Please fill in your first and last name.", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+            self.present(alert, animated: true, completion: nil)
+            return false
+        }
+        
+        if cityLabel.isHidden {
+            let alert = UIAlertController(title: "Profile not saved", message: "Please select the city you were born in.", preferredStyle: .alert)
             alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
             self.present(alert, animated: true, completion: nil)
             return false
@@ -94,11 +108,11 @@ extension SignUpTableViewController: GMSAutocompleteViewControllerDelegate {
 
   // Handle the user's selection.
   func viewController(_ viewController: GMSAutocompleteViewController, didAutocompleteWith place: GMSPlace) {
-    print("Place name: \(place.name)")
-    print("Place ID: \(place.placeID)")
+    cityLabel.isHidden = false
+    cityLabel.text = place.name
+    cityLat = place.coordinate.latitude
+    cityLong = place.coordinate.longitude
     dismiss(animated: true, completion: nil)
-    place.coordinate.latitude
-    place.coordinate.longitude
   }
 
   func viewController(_ viewController: GMSAutocompleteViewController, didFailAutocompleteWithError error: Error) {
