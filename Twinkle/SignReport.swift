@@ -36,3 +36,19 @@ var sunSignData = [
     "Scorpio":"Scorpio-born are passionate and assertive people. They are determined and decisive, and will research until they find out the truth. Scorpio is a great leader, always aware of the situation and also features prominently in resourcefulness. Scorpio is a Water sign and lives to experience and express emotions. Although emotions are very important for Scorpio, they manifest them differently than other water signs. In any case, you can be sure that the Scorpio will keep your secrets, whatever they may be.",
     "Sagittarius":"Curious and energetic, Sagittarius is one of the biggest travelers among all zodiac signs. Their open mind and philosophical view motivates them to wander around the world in search of the meaning of life. Sagittarius is extrovert, optimistic and enthusiastic, and likes changes. Sagittarius-born are able to transform their thoughts into concrete actions and they will do anything to achieve their goals.",
     "Capricorn":"Capricorn is a sign that represents time and responsibility, and its representatives are traditional and often very serious by nature. These individuals possess an inner state of independence that enables significant progress both in their personal and professional lives. They are masters of self-control and have the ability to lead the way, make solid and realistic plans, and manage many people who work for them at any time. They will learn from their mistakes and get to the top based solely on their experience and expertise."]
+
+
+var compatability = [
+    "Aries":"Aries, Leo Sagittarius, Gemini, Libra, Aquarius",
+    "Leo":"Aries, Leo Sagittarius, Gemini, Libra",
+    "Sagittarius":"Aries, Leo Sagittarius, Gemini, Libra, Aquarius",
+    "Taurus":"Taurus, Virgo, Capricorn, Cancer, Scorpio, Pisces",
+    "Virgo":"Taurus, Virgo, Capricorn, Cancer, Scorpio",
+    "Capricorn":"Taurus, Virgo, Capricorn, Cancer, Scorpio, Pisces"
+    "Gemini":"Aries, Leo, Gemini, Libra, Aquarius",
+    "Libra":"Leo, Sagittarius, Gemini, Libra, Aquarius",
+    "Aquarius":"Aries, Leo, Sagittarius, Gemini, Libra, Aquarius",
+    "Cancer":"Taurus, Virgo, Capricorn, Cancer, Scorpio, Pisces",
+    "Scorpio":"Taurus, Virgo, Capricorn, Cancer, Scorpio, Pisces",
+    "Pices":"Taurus, Capricorn, Cancer, Scorpio, Pisces"
+]
