@@ -39,8 +39,21 @@ class SignUpTableViewController: UITableViewController {
                     self.present(alert, animated: true, completion: nil)
                     print(error?.localizedDescription)
                 } else {
+                    // Get ID of currently logged in user
                     let userID = Auth.auth().currentUser?.uid
-                    self.ref.child("users").child(userID!).setValue(["first name": self.firstName.text!, "last name":self.lastName.text!])
+                    
+                    let dateFormatter = DateFormatter()
+                    dateFormatter.dateFormat = "MM-dd-yyyy"
+                    let timeFormatter = DateFormatter()
+                    timeFormatter.dateFormat = "HH:mm"
+                    let strDate = dateFormatter.string(from: self.birthdayPicker.date)
+                    let strTime = timeFormatter.string(from: self.birthtimePicker.date)
+                    
+                    self.ref.child("users").child(userID!).setValue(
+                        ["first name": self.firstName.text!,
+                         "last name": self.lastName.text!,
+                         "birthday": strDate,
+                         "birthtime": strTime])
                 }
             }
         }
