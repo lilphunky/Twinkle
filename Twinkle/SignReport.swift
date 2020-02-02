@@ -44,7 +44,7 @@ var compatability = [
     "Sagittarius":"Aries, Leo Sagittarius, Gemini, Libra, Aquarius",
     "Taurus":"Taurus, Virgo, Capricorn, Cancer, Scorpio, Pisces",
     "Virgo":"Taurus, Virgo, Capricorn, Cancer, Scorpio",
-    "Capricorn":"Taurus, Virgo, Capricorn, Cancer, Scorpio, Pisces"
+    "Capricorn":"Taurus, Virgo, Capricorn, Cancer, Scorpio, Pisces",
     "Gemini":"Aries, Leo, Gemini, Libra, Aquarius",
     "Libra":"Leo, Sagittarius, Gemini, Libra, Aquarius",
     "Aquarius":"Aries, Leo, Sagittarius, Gemini, Libra, Aquarius",

@@ -107,7 +107,7 @@ class API {
     }
 }*/
 
-func sendPost(urlString url: String, parameters: GENERAL_PLANET_PARAM, success: @escaping ([String:Any]) -> Void, failure: @escaping (String?) -> Void) {
+func sendPost(urlString url: String, parameters: GENERAL_PLANET_PARAM, success: @escaping ([[String:Any]]) -> Void, failure: @escaping (String?) -> Void) {
     print("sendpost start")
     let username = "606112"
     let password = "d20281c03812a38046bb326a4c1a6558"
@@ -151,17 +151,17 @@ func sendPost(urlString url: String, parameters: GENERAL_PLANET_PARAM, success: 
         //print("httpResponse -> \(httpResponse)")
         
         guard let response_str = String(data: data, encoding: .utf8) else {return}
-        print("response_str -> \(response_str)")
+        //print("response_str -> \(response_str)")
         
         do {
-            let dataArray = try! JSONSerialization.jsonObject(with: data, options: []) as? [String: Any]
+            let dataArray = try! JSONSerialization.jsonObject(with: data, options: []) as? [[String: Any]]
             print("Made dataArray")
             /*
             for i in dataArray ?? []{
                 print(i["name"], i["sign"])
             }*/
             
-            success(dataArray ?? [:])
+            success(dataArray ?? [])
             
         } catch {
             print(data)
@@ -174,13 +174,7 @@ func sendPost(urlString url: String, parameters: GENERAL_PLANET_PARAM, success: 
 
 
 
-var test = API()
 
-//var pleaseWork = test.sendPost(urlString: "https://json.astrologyapi.com/v1/planets", data)
-//print(pleaseWork)
-
-test.generateReport()
-print(test.outputData)
 
 
 

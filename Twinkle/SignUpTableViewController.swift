@@ -25,7 +25,8 @@ class SignUpTableViewController: UITableViewController {
     
     var cityLat: Double = 0.0
     var cityLong: Double = 0.0
-    var cityTmz: Double = 0.0
+    var cityTmz: Double = -8.0
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -75,7 +76,7 @@ class SignUpTableViewController: UITableViewController {
                     let strTime = timeFormatter.string(from: self.birthtimePicker.date)
                     
                     let calendar = Calendar.current
-                    let components = calendar.dateComponents([.month, .day, .year], from: birthdayPicker.date)
+                    let components = calendar.dateComponents([.month, .day, .year], from: self.birthdayPicker.date)
                     let year = components.year
                     let month = components.month
                     let day = components.day
@@ -93,13 +94,13 @@ class SignUpTableViewController: UITableViewController {
                          "longitude": self.cityLong,
                          "timezone": self.cityTmz])
                     
-                    sendPost(urlString: "https://json.astrologyapi.com/v1/planets", parameters: GENERAL_PLANET_PARAM(day: day!, month: month!, year: year!, hour: hour!, min: minute!, lat: self.cityLat, lon: self.cityLong, tzone: cityTmz), success: { data in
+                    sendPost(urlString: "https://json.astrologyapi.com/v1/planets", parameters: GENERAL_PLANET_PARAM(day: day!, month: month!, year: year!, hour: hour!, min: minute!, lat: self.cityLat, lon: self.cityLong, tzone: self.cityTmz), success: { data in
                         self.ref.child("users").child(userID!).child("chart").setValue(
                             ["sun": data[0]["sign"],
                              "moon": data[2]["sign"],
-                             "rising": data[10]["sign"]])
+                             "rising": data[9]["sign"]])
                     }) { error in
-                        let alert = UIAlertController(title: "Profile not saved", message: error?.localizedDescription, preferredStyle: .alert)
+                        let alert = UIAlertController(title: "Profile not saved", message: error, preferredStyle: .alert)
                         alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
                         self.present(alert, animated: true, completion: nil)
                     }
@@ -144,7 +145,7 @@ extension SignUpTableViewController: GMSAutocompleteViewControllerDelegate {
     selectCityBTN.setTitle("Change city", for: .normal)
     cityLat = place.coordinate.latitude
     cityLong = place.coordinate.longitude
-    cityTmz = Double(place.utcOffsetMinutes/60.0)
+    //cityTmz = Double(place.utcOffsetMinutes?.doubleValue/60.0)
     dismiss(animated: true, completion: nil)
   }
 
