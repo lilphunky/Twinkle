@@ -32,6 +32,10 @@ class SignUpTableViewController: UITableViewController {
         ref = Database.database().reference()
     }
     
+    @IBAction func onCancelTap(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
+    }
+    
     @IBAction func selectCity(_ sender: Any) {
         let autocompleteController = GMSAutocompleteViewController()
         autocompleteController.delegate = self
