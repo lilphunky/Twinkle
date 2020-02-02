@@ -6,8 +6,16 @@ class API {
     var outputData: [String:Any] = [:]
     let data = GENERAL_PLANET_PARAM(day: 10, month: 12, year: 1993, hour: 1, min: 25, lat: 25, lon: 82, tzone: 5.5)
     
-    func generateReport(){
+    func generateAscReport(){
         sendPost(urlString: "https://json.astrologyapi.com/v1/general_ascendant_report", self.data, success: { data in
+                print("data -> \(data)")
+                self.outputData = data
+            }) { error in
+                print(error)
+        }
+        
+    func generatePlanetReport(){
+        sendPost(urlString: "https://json.astrologyapi.com/v1/planets", self.data, success: { data in
                 print("data -> \(data)")
                 self.outputData = data
             }) { error in
@@ -113,7 +121,7 @@ print(test.outputData)
 
 
 
-//test.getPosts(url: "http://ohmanda.com/api/horoscope/virgo") { data in
+//test.getPosts(url: "http://ohmanda.com/api/horoscope/") { data in
 //    print(data)
 //}
 //
