@@ -63,7 +63,6 @@ class SignUpTableViewController: UITableViewController {
                     let alert = UIAlertController(title: "Profile not saved", message: error?.localizedDescription, preferredStyle: .alert)
                     alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
                     self.present(alert, animated: true, completion: nil)
-                    print(error?.localizedDescription)
                 } else {
                     // Get ID of currently logged in user
                     let userID = Auth.auth().currentUser?.uid
