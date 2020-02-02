@@ -7,6 +7,8 @@ target 'Twinkle' do
 
   # Pods for Twinkle
 pod 'Firebase/Analytics'
+pod 'Firebase/Database'
+pod 'Firebase/Auth'
 
   target 'TwinkleTests' do
     inherit! :search_paths
