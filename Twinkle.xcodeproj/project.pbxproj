@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1591F07823E70EA500E9424A /* APIConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1591F07723E70EA500E9424A /* APIConnection.swift */; };
+		1591F07A23E714F600E9424A /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1591F07923E714F600E9424A /* Models.swift */; };
+		1591F07C23E725DB00E9424A /* SignReport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1591F07B23E725DB00E9424A /* SignReport.swift */; };
 		594BAAAC4C19A5883A4A51CF /* Pods_TwinkleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4C16E023E35E6E8F9CB15C8 /* Pods_TwinkleTests.framework */; };
 		767343E323E6F2F100A74551 /* MatchViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 767343E223E6F2F100A74551 /* MatchViewViewController.swift */; };
 		767343E523E6F30C00A74551 /* MatchProfileTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 767343E423E6F30C00A74551 /* MatchProfileTableViewController.swift */; };
@@ -45,6 +48,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1591F07723E70EA500E9424A /* APIConnection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConnection.swift; sourceTree = "<group>"; };
+		1591F07923E714F600E9424A /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		1591F07B23E725DB00E9424A /* SignReport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignReport.swift; sourceTree = "<group>"; };
 		2EE4D6FF31537C9EDF0EDF09 /* Pods_Twinkle.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Twinkle.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4615B0DF6650E674EC9CC812 /* Pods_Twinkle_TwinkleUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Twinkle_TwinkleUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		654B9FA89EBFFC0EBBA36D48 /* Pods-Twinkle.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Twinkle.release.xcconfig"; path = "Target Support Files/Pods-Twinkle/Pods-Twinkle.release.xcconfig"; sourceTree = "<group>"; };
@@ -154,6 +160,9 @@
 				767343E423E6F30C00A74551 /* MatchProfileTableViewController.swift */,
 				767343E623E6F32100A74551 /* UserProfileTableViewController.swift */,
 				767343E823E6F33000A74551 /* UserEditTableViewController.swift */,
+				1591F07723E70EA500E9424A /* APIConnection.swift */,
+				1591F07923E714F600E9424A /* Models.swift */,
+				1591F07B23E725DB00E9424A /* SignReport.swift */,
 			);
 			path = Twinkle;
 			sourceTree = "<group>";
@@ -465,6 +474,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1591F07A23E714F600E9424A /* Models.swift in Sources */,
 				B48B0F1923E6583700CDF72D /* LoginViewController.swift in Sources */,
 				B48B0EEB23E6364C00CDF72D /* ViewController.swift in Sources */,
 				767343E523E6F30C00A74551 /* MatchProfileTableViewController.swift in Sources */,
@@ -472,7 +482,9 @@
 				767343E323E6F2F100A74551 /* MatchViewViewController.swift in Sources */,
 				767343E923E6F33000A74551 /* UserEditTableViewController.swift in Sources */,
 				B48B0EE923E6364C00CDF72D /* SceneDelegate.swift in Sources */,
+				1591F07C23E725DB00E9424A /* SignReport.swift in Sources */,
 				767343E723E6F32100A74551 /* UserProfileTableViewController.swift in Sources */,
+				1591F07823E70EA500E9424A /* APIConnection.swift in Sources */,
 				B48B0F1B23E678A800CDF72D /* SignUpTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

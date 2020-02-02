@@ -25,6 +25,7 @@ class SignUpTableViewController: UITableViewController {
     
     var cityLat: Double = 0.0
     var cityLong: Double = 0.0
+    var cityTmz: Double = 0.0
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -56,7 +57,6 @@ class SignUpTableViewController: UITableViewController {
     }
     
     @IBAction func saveProfile(_ sender: Any) {
-        
         if fieldsNotEmpty() {
             Auth.auth().createUser(withEmail: emailField.text!, password: passwordField.text!) { authResult, error in
                 if error != nil {
@@ -74,17 +74,44 @@ class SignUpTableViewController: UITableViewController {
                     let strDate = dateFormatter.string(from: self.birthdayPicker.date)
                     let strTime = timeFormatter.string(from: self.birthtimePicker.date)
                     
+                    let calendar = Calendar.current
+                    let components = calendar.dateComponents([.month, .day, .year], from: birthdayPicker.date)
+                    let year = components.year
+                    let month = components.month
+                    let day = components.day
+                    
+                    let timeComponents = calendar.dateComponents([.hour, .minute], from: self.birthtimePicker.date)
+                    let hour = timeComponents.hour
+                    let minute = timeComponents.minute
+                    
                     self.ref.child("users").child(userID!).setValue(
                         ["first name": self.firstName.text!,
                          "last name": self.lastName.text!,
                          "birthday": strDate,
                          "birthtime": strTime,
                          "latitude": self.cityLat,
-                         "longitude": self.cityLong])
+                         "longitude": self.cityLong,
+                         "timezone": self.cityTmz])
+                    
+                    sendPost(urlString: "https://json.astrologyapi.com/v1/planets", parameters: GENERAL_PLANET_PARAM(day: day!, month: month!, year: year!, hour: hour!, min: minute!, lat: self.cityLat, lon: self.cityLong, tzone: cityTmz), success: { data in
+                        self.ref.child("users").child(userID!).child("chart").setValue(
+                            ["sun": data[0]["sign"],
+                             "moon": data[2]["sign"],
+                             "rising": data[10]["sign"]])
+                    }) { error in
+                        let alert = UIAlertController(title: "Profile not saved", message: error?.localizedDescription, preferredStyle: .alert)
+                        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+                        self.present(alert, animated: true, completion: nil)
+                    }
+                    
+                    DispatchQueue.main.async {
+                        let vc: MatchViewViewController = self.storyboard?.instantiateViewController(identifier: "Match View") as! MatchViewViewController
+                        vc.modalPresentationStyle = .fullScreen
+                        self.present(vc, animated: true, completion: nil)
+                    }
                 }
             }
         }
-        
     }
     
     func fieldsNotEmpty() -> Bool {
@@ -117,6 +144,7 @@ extension SignUpTableViewController: GMSAutocompleteViewControllerDelegate {
     selectCityBTN.setTitle("Change city", for: .normal)
     cityLat = place.coordinate.latitude
     cityLong = place.coordinate.longitude
+    cityTmz = Double(place.utcOffsetMinutes/60.0)
     dismiss(animated: true, completion: nil)
   }
 

@@ -20,8 +20,8 @@ struct GENERAL_PLANET_PARAM: Codable {
     let year: Int
     let hour: Int
     let min: Int
-    let lat: Int
-    let lon: Int
+    let lat: Double
+    let lon: Double
     let tzone: Double
 }
 
