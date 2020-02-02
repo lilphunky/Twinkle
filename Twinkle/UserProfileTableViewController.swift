@@ -38,6 +38,10 @@ class UserProfileTableViewController: UITableViewController {
             // Get user value
             let value = snapshot.value as? NSDictionary
             self.nameLabel.text = value?["first name"] as? String ?? ""
+            let chart = value?["chart"] as? NSDictionary
+            self.userSun.text = chart?["sun"] as? String ?? ""
+            self.userMoon.text = chart?["moon"] as? String ?? ""
+            self.userRising.text = chart?["rising"] as? String ?? ""
 
             // ...
           }) { (error) in
