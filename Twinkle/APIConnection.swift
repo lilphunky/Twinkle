@@ -3,6 +3,18 @@ import Foundation
 
 
 class API {
+    var outputData: [String:Any] = [:]
+    let data = GENERAL_PLANET_PARAM(day: 10, month: 12, year: 1993, hour: 1, min: 25, lat: 25, lon: 82, tzone: 5.5)
+    
+    func generateReport(){
+        sendPost(urlString: "https://json.astrologyapi.com/v1/general_ascendant_report", self.data, success: { data in
+                print("data -> \(data)")
+                self.outputData = data
+            }) { error in
+                print(error)
+        }
+    }
+    
     // Gets the posts json data and returns it converted as a dictionary
     func getPosts(url: String, completion: @escaping ([String:Any]) -> Void) {
         // Network request snippet
@@ -14,14 +26,15 @@ class API {
             if let error = error {
                 print(error.localizedDescription)
             } else if let data = data {
-                let dataDictionary = try! JSONSerialization.jsonObject(with: data, options: []) as! [String: Any]
-                return completion(dataDictionary)
+                let dataArray = try! JSONSerialization.jsonObject(with: data, options: []) as! [String: Any]
+                return completion(dataArray)
             }
         }
         task.resume()
     }
 
-    func sendPost(urlString url: String, _ parameters: GENERAL_PLANET_PARAM) {
+    func sendPost(urlString url: String, _ parameters: GENERAL_PLANET_PARAM, success: @escaping ([String:Any]) -> Void, failure: @escaping (String?) -> Void) {
+        print("sendpost start")
         let username = "606112"
         let password = "d20281c03812a38046bb326a4c1a6558"
         
@@ -61,34 +74,52 @@ class API {
                 print("response error")
                 return
             }
-            print("httpResponse -> \(httpResponse)")
+            //print("httpResponse -> \(httpResponse)")
             
             guard let response_str = String(data: data, encoding: .utf8) else {return}
             print("response_str -> \(response_str)")
             
             do {
-                let dataDictionary = try! JSONSerialization.jsonObject(with: data, options: []) as? [[String: Any]]
-                for i in dataDictionary ?? []{
+                let dataArray = try! JSONSerialization.jsonObject(with: data, options: []) as? [String: Any]
+                print("Made dataArray")
+                /*
+                for i in dataArray ?? []{
                     print(i["name"], i["sign"])
-                }
-                } catch {
+                }*/
+                
+                success(dataArray ?? [:])
+                
+            } catch {
                 print(data)
+                    
                 print("error -> \(error.localizedDescription)")
+                failure(error.localizedDescription)
             }
         }.resume()
     }
 }
 
 
+
+
 var test = API()
-test.getPosts(url: "http://ohmanda.com/api/horoscope/virgo") { data in
-    print(data)
-}
 
-test.getPosts(url: "http://ohmanda.com/api/horoscope/leo") { data in
-    print(data)
-}
+//var pleaseWork = test.sendPost(urlString: "https://json.astrologyapi.com/v1/planets", data)
+//print(pleaseWork)
 
-let data = GENERAL_PLANET_PARAM(day: 10, month: 12, year: 1993, hour: 1, min: 25, lat: 25, lon: 82, tzone: 5.5)
+test.generateReport()
+print(test.outputData)
 
-test.sendPost(urlString: "https://json.astrologyapi.com/v1/planets", data)
+
+
+
+//test.getPosts(url: "http://ohmanda.com/api/horoscope/virgo") { data in
+//    print(data)
+//}
+//
+//test.getPosts(url: "http://ohmanda.com/api/horoscope/leo") { data in
+//    print(data)
+//}
+//
+//
+//
