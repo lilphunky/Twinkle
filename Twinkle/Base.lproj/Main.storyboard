@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="HzC-sh-dmw">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="HzC-sh-dmw">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Match View View Controller-->
         <scene sceneID="qgi-6g-bmT">
             <objects>
-                <viewController id="Wd8-0Z-MPm" sceneMemberID="viewController">
+                <viewController id="Wd8-0Z-MPm" customClass="MatchViewViewController" customModule="Twinkle" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="gVB-1K-nf6">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -126,15 +126,23 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="abt-IZ-RNv"/>
                     </view>
+                    <connections>
+                        <outlet property="matchBio" destination="Y6A-Ye-vhm" id="cIV-Pa-mrl"/>
+                        <outlet property="matchImage" destination="HNY-II-Yen" id="dhB-vx-Q1l"/>
+                        <outlet property="matchMoon" destination="YuM-Af-0Ij" id="66Q-AW-DMa"/>
+                        <outlet property="matchName" destination="Oe8-kE-LaJ" id="4VQ-6h-KtK"/>
+                        <outlet property="matchRising" destination="J2N-N2-xlg" id="lWu-TX-hhD"/>
+                        <outlet property="matchSun" destination="BI5-X2-HQv" id="RqC-SX-MxD"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6L5-oF-sGQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="137.68115942028987" y="838.39285714285711"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Match Profile Table View Controller-->
         <scene sceneID="0rU-bp-BUu">
             <objects>
-                <tableViewController id="Eb9-Fl-NfA" sceneMemberID="viewController">
+                <tableViewController id="Eb9-Fl-NfA" customClass="MatchProfileTableViewController" customModule="Twinkle" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="7gj-Jl-HFs">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -300,15 +308,25 @@
                             <outlet property="delegate" destination="Eb9-Fl-NfA" id="n4p-bK-GBO"/>
                         </connections>
                     </tableView>
+                    <connections>
+                        <outlet property="matchBio" destination="1Zm-u4-4Lb" id="j9D-Eh-xFG"/>
+                        <outlet property="matchCompatiable" destination="NgR-lR-DMB" id="UWO-Lp-CrR"/>
+                        <outlet property="matchImage" destination="GXl-MG-Nad" id="O8b-Zi-6iN"/>
+                        <outlet property="matchMoon" destination="jWN-Jr-DGa" id="t78-36-n9x"/>
+                        <outlet property="matchName" destination="79V-8J-It4" id="6EO-3N-aTG"/>
+                        <outlet property="matchRising" destination="0fn-ud-Pfy" id="MFV-0F-9Ab"/>
+                        <outlet property="matchSocials" destination="CHs-F6-iG0" id="dkQ-m9-I3G"/>
+                        <outlet property="matchSun" destination="5bq-Xm-JhJ" id="uNM-gA-5q0"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="a9Q-VO-JDm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="896" y="838"/>
         </scene>
-        <!--Table View Controller-->
+        <!--User Profile Table View Controller-->
         <scene sceneID="hTb-1O-tyl">
             <objects>
-                <tableViewController id="Y7J-F2-0D4" sceneMemberID="viewController">
+                <tableViewController id="Y7J-F2-0D4" customClass="UserProfileTableViewController" customModule="Twinkle" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="cop-Gj-VvX">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -530,19 +548,35 @@
                             <outlet property="delegate" destination="Y7J-F2-0D4" id="GDC-M9-1HO"/>
                         </connections>
                     </tableView>
+                    <connections>
+                        <outlet property="userCompatiable" destination="8hp-rF-qUJ" id="HVt-vh-YtU"/>
+                        <outlet property="userDaily" destination="Dgy-WO-pXe" id="ZMD-YR-ykP"/>
+                        <outlet property="userImage" destination="aJ6-Ag-PD3" id="OyA-iW-9Zm"/>
+                        <outlet property="userMoon" destination="Zeb-Xb-50R" id="W2E-Y8-3lW"/>
+                        <outlet property="userMoonInfo" destination="uWy-0b-rY4" id="bC6-Hx-zAe"/>
+                        <outlet property="userRising" destination="SLh-F3-zFH" id="nqP-Vi-x6f"/>
+                        <outlet property="userRisingInfo" destination="StI-xF-pSZ" id="Tfa-zG-Amu"/>
+                        <outlet property="userSun" destination="Ddu-17-zdI" id="rX0-Ej-4qJ"/>
+                        <outlet property="userSunInfo" destination="CeK-6j-pEo" id="YY0-mb-q2l"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="f1k-cQ-OAD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1628" y="838"/>
         </scene>
-        <!--Table View Controller-->
+        <!--User Edit Table View Controller-->
         <scene sceneID="LqK-oq-BHQ">
             <objects>
-                <tableViewController id="KMU-0J-T0l" sceneMemberID="viewController">
+                <tableViewController id="KMU-0J-T0l" customClass="UserEditTableViewController" customModule="Twinkle" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="5o7-am-InT">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <button key="tableFooterView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="iZg-WZ-6ru">
+                            <rect key="frame" x="0.0" y="683" width="414" height="44"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <state key="normal" title="Save"/>
+                        </button>
                         <sections>
                             <tableViewSection id="Fsy-l9-RnP">
                                 <cells>
@@ -577,6 +611,10 @@
                                                     </constraints>
                                                     <state key="normal" title="Cancel"/>
                                                 </button>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9j7-S9-QsG">
+                                                    <rect key="frame" x="97" y="48" width="220" height="114"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="26x-s7-2s0" firstAttribute="top" secondItem="KX7-X9-6d6" secondAttribute="topMargin" constant="8" id="Slh-K4-yOg"/>
@@ -648,6 +686,11 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="aTR-vk-DEg"/>
+                    <connections>
+                        <outlet property="userBio" destination="BfB-4Y-y4i" id="7vU-zk-Pq0"/>
+                        <outlet property="userImage" destination="9j7-S9-QsG" id="hlD-qr-U88"/>
+                        <outlet property="userName" destination="caR-59-OSz" id="9iZ-aI-36b"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7ND-gN-1KA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

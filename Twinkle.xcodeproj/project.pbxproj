@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		594BAAAC4C19A5883A4A51CF /* Pods_TwinkleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4C16E023E35E6E8F9CB15C8 /* Pods_TwinkleTests.framework */; };
+		767343E323E6F2F100A74551 /* MatchViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 767343E223E6F2F100A74551 /* MatchViewViewController.swift */; };
+		767343E523E6F30C00A74551 /* MatchProfileTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 767343E423E6F30C00A74551 /* MatchProfileTableViewController.swift */; };
+		767343E723E6F32100A74551 /* UserProfileTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 767343E623E6F32100A74551 /* UserProfileTableViewController.swift */; };
+		767343E923E6F33000A74551 /* UserEditTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 767343E823E6F33000A74551 /* UserEditTableViewController.swift */; };
 		7E35E78863FB8F2B7A3AF917 /* Pods_Twinkle_TwinkleUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4615B0DF6650E674EC9CC812 /* Pods_Twinkle_TwinkleUITests.framework */; };
 		B48B0EE723E6364C00CDF72D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48B0EE623E6364C00CDF72D /* AppDelegate.swift */; };
 		B48B0EE923E6364C00CDF72D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48B0EE823E6364C00CDF72D /* SceneDelegate.swift */; };
@@ -45,6 +49,10 @@
 		4615B0DF6650E674EC9CC812 /* Pods_Twinkle_TwinkleUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Twinkle_TwinkleUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		654B9FA89EBFFC0EBBA36D48 /* Pods-Twinkle.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Twinkle.release.xcconfig"; path = "Target Support Files/Pods-Twinkle/Pods-Twinkle.release.xcconfig"; sourceTree = "<group>"; };
 		745BD5A5A91EDCA37B106201 /* Pods-Twinkle-TwinkleUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Twinkle-TwinkleUITests.release.xcconfig"; path = "Target Support Files/Pods-Twinkle-TwinkleUITests/Pods-Twinkle-TwinkleUITests.release.xcconfig"; sourceTree = "<group>"; };
+		767343E223E6F2F100A74551 /* MatchViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchViewViewController.swift; sourceTree = "<group>"; };
+		767343E423E6F30C00A74551 /* MatchProfileTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchProfileTableViewController.swift; sourceTree = "<group>"; };
+		767343E623E6F32100A74551 /* UserProfileTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileTableViewController.swift; sourceTree = "<group>"; };
+		767343E823E6F33000A74551 /* UserEditTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserEditTableViewController.swift; sourceTree = "<group>"; };
 		8EF35A02720547F39B950562 /* Pods-TwinkleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TwinkleTests.debug.xcconfig"; path = "Target Support Files/Pods-TwinkleTests/Pods-TwinkleTests.debug.xcconfig"; sourceTree = "<group>"; };
 		A2B6AD24AB563F764767EA34 /* Pods-TwinkleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TwinkleTests.release.xcconfig"; path = "Target Support Files/Pods-TwinkleTests/Pods-TwinkleTests.release.xcconfig"; sourceTree = "<group>"; };
 		B48B0EE323E6364C00CDF72D /* Twinkle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Twinkle.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -142,6 +150,10 @@
 				B48B0F1623E64BF500CDF72D /* GoogleService-Info.plist */,
 				B48B0F1823E6583700CDF72D /* LoginViewController.swift */,
 				B48B0F1A23E678A800CDF72D /* SignUpTableViewController.swift */,
+				767343E223E6F2F100A74551 /* MatchViewViewController.swift */,
+				767343E423E6F30C00A74551 /* MatchProfileTableViewController.swift */,
+				767343E623E6F32100A74551 /* UserProfileTableViewController.swift */,
+				767343E823E6F33000A74551 /* UserEditTableViewController.swift */,
 			);
 			path = Twinkle;
 			sourceTree = "<group>";
@@ -455,8 +467,12 @@
 			files = (
 				B48B0F1923E6583700CDF72D /* LoginViewController.swift in Sources */,
 				B48B0EEB23E6364C00CDF72D /* ViewController.swift in Sources */,
+				767343E523E6F30C00A74551 /* MatchProfileTableViewController.swift in Sources */,
 				B48B0EE723E6364C00CDF72D /* AppDelegate.swift in Sources */,
+				767343E323E6F2F100A74551 /* MatchViewViewController.swift in Sources */,
+				767343E923E6F33000A74551 /* UserEditTableViewController.swift in Sources */,
 				B48B0EE923E6364C00CDF72D /* SceneDelegate.swift in Sources */,
+				767343E723E6F32100A74551 /* UserProfileTableViewController.swift in Sources */,
 				B48B0F1B23E678A800CDF72D /* SignUpTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
