@@ -28,7 +28,7 @@ class UserProfileTableViewController: UITableViewController {
         super.viewDidLoad()
         ref = Database.database().reference()
 
-
+        self.tableView.rowHeight = UITableView.automaticDimension
         fillInfo()
         }
 
@@ -43,9 +43,11 @@ class UserProfileTableViewController: UITableViewController {
             self.userMoon.text = chart?["moon"] as? String ?? ""
             self.userRising.text = chart?["rising"] as? String ?? ""
 
-            // ...
           }) { (error) in
             print(error.localizedDescription)
         }
+    }
+    @IBAction func onFeedTap(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
     }
 }

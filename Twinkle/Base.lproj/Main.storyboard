@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Wd8-0Z-MPm">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="HzC-sh-dmw">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -256,7 +256,7 @@
                                                         </label>
                                                     </subviews>
                                                 </stackView>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="woman" translatesAutoresizingMaskIntoConstraints="NO" id="GXl-MG-Nad">
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="woman" translatesAutoresizingMaskIntoConstraints="NO" id="GXl-MG-Nad">
                                                     <rect key="frame" x="317" y="29" width="77" height="77"/>
                                                     <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <constraints>
@@ -270,7 +270,7 @@
                                                 <constraint firstItem="n9x-BK-LD8" firstAttribute="leading" secondItem="ZY5-3O-Zhg" secondAttribute="leadingMargin" id="BaG-p3-tau"/>
                                                 <constraint firstItem="79V-8J-It4" firstAttribute="leading" secondItem="ZY5-3O-Zhg" secondAttribute="leadingMargin" constant="5" id="WzA-3o-S8V"/>
                                                 <constraint firstItem="n9x-BK-LD8" firstAttribute="top" secondItem="79V-8J-It4" secondAttribute="bottom" constant="5" id="dCO-Ht-lfZ"/>
-                                                <constraint firstItem="GXl-MG-Nad" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="ZY5-3O-Zhg" secondAttribute="bottomMargin" constant="8" id="fBb-YT-eFu"/>
+                                                <constraint firstItem="GXl-MG-Nad" firstAttribute="bottom" secondItem="ZY5-3O-Zhg" secondAttribute="bottomMargin" constant="8" id="fBb-YT-eFu"/>
                                                 <constraint firstItem="79V-8J-It4" firstAttribute="top" secondItem="ZY5-3O-Zhg" secondAttribute="topMargin" id="fdW-g9-dWu"/>
                                             </constraints>
                                         </tableViewCellContentView>
@@ -283,7 +283,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bio" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qUP-Sw-VgN">
-                                                    <rect key="frame" x="20" y="11" width="374" height="35"/>
+                                                    <rect key="frame" x="20" y="11" width="378" height="35"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="35" id="E0F-1p-WlY"/>
                                                         <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="35" id="iYj-KZ-RYU"/>
@@ -292,8 +292,8 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Zm-u4-4Lb">
-                                                    <rect key="frame" x="20" y="51" width="386" height="70"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Zm-u4-4Lb">
+                                                    <rect key="frame" x="20" y="51" width="370" height="61"/>
                                                     <string key="text">I love walking my two dogs and staying fit! I also love long walks on the beach! My favorite food of all time is acai bowls! #healthygal</string>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
@@ -301,9 +301,10 @@
                                                 </label>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="qUP-Sw-VgN" firstAttribute="trailing" secondItem="KFs-Q4-iR4" secondAttribute="trailingMargin" id="gtL-oi-Skn"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="1Zm-u4-4Lb" secondAttribute="trailing" constant="4" id="QrR-NE-Yne"/>
                                                 <constraint firstItem="1Zm-u4-4Lb" firstAttribute="leading" secondItem="qUP-Sw-VgN" secondAttribute="leading" id="hw1-2p-Dzc"/>
                                                 <constraint firstItem="qUP-Sw-VgN" firstAttribute="leading" secondItem="KFs-Q4-iR4" secondAttribute="leadingMargin" id="nMh-Qm-LJV"/>
+                                                <constraint firstItem="qUP-Sw-VgN" firstAttribute="trailing" secondItem="KFs-Q4-iR4" secondAttribute="trailingMargin" constant="4" id="oID-5H-C1V"/>
                                                 <constraint firstItem="qUP-Sw-VgN" firstAttribute="top" secondItem="KFs-Q4-iR4" secondAttribute="topMargin" id="v3h-Zd-TpG"/>
                                                 <constraint firstItem="1Zm-u4-4Lb" firstAttribute="top" secondItem="qUP-Sw-VgN" secondAttribute="bottom" constant="5" id="w6G-uy-1yR"/>
                                             </constraints>
@@ -317,13 +318,13 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Compatability" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1hj-je-00f">
-                                                    <rect key="frame" x="20" y="11" width="151" height="30"/>
+                                                    <rect key="frame" x="20" y="11" width="370" height="30"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NgR-lR-DMB">
-                                                    <rect key="frame" x="20" y="41" width="386" height="122"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NgR-lR-DMB">
+                                                    <rect key="frame" x="20" y="46" width="370" height="122"/>
                                                     <string key="text">You and Lily are compatiable! Your Aries Sun and Lily's Leo Sun both seek for adventures and are passionate to try new things. You like to bend yourself to whatever is thrown at you and Lily is adaptable to quick changes. The stars have align! </string>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
@@ -331,8 +332,10 @@
                                                 </label>
                                             </subviews>
                                             <constraints>
+                                                <constraint firstAttribute="trailingMargin" secondItem="1hj-je-00f" secondAttribute="trailing" constant="4" id="3SU-rl-W4L"/>
                                                 <constraint firstItem="1hj-je-00f" firstAttribute="top" secondItem="tCR-bs-j4m" secondAttribute="topMargin" id="KoS-2l-ddO"/>
                                                 <constraint firstItem="1hj-je-00f" firstAttribute="leading" secondItem="tCR-bs-j4m" secondAttribute="leadingMargin" id="QKu-sW-jbr"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="NgR-lR-DMB" secondAttribute="trailing" constant="4" id="Vnb-8n-IFw"/>
                                                 <constraint firstItem="NgR-lR-DMB" firstAttribute="top" secondItem="1hj-je-00f" secondAttribute="bottom" constant="5" id="wiF-FP-WXt"/>
                                                 <constraint firstItem="1hj-je-00f" firstAttribute="leading" secondItem="NgR-lR-DMB" secondAttribute="leading" id="xA9-BG-ZzH"/>
                                             </constraints>
@@ -363,7 +366,9 @@
                                                 </label>
                                             </subviews>
                                             <constraints>
+                                                <constraint firstAttribute="trailingMargin" secondItem="f0n-EX-kf9" secondAttribute="trailing" constant="4" id="16X-tX-mmx"/>
                                                 <constraint firstItem="f0n-EX-kf9" firstAttribute="leading" secondItem="CHs-F6-iG0" secondAttribute="leading" id="GY1-1b-c2K"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="CHs-F6-iG0" secondAttribute="trailing" constant="4" id="ITO-m2-vSV"/>
                                                 <constraint firstItem="f0n-EX-kf9" firstAttribute="top" secondItem="yOn-4D-wBG" secondAttribute="topMargin" id="Pdh-sq-tdp"/>
                                                 <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="CHs-F6-iG0" secondAttribute="trailing" constant="20" symbolic="YES" id="b5F-au-dEh"/>
                                                 <constraint firstItem="f0n-EX-kf9" firstAttribute="leading" secondItem="yOn-4D-wBG" secondAttribute="leadingMargin" constant="4" id="i7y-0e-wAw"/>
@@ -501,7 +506,7 @@
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <state key="normal" title="Matches" image="heart"/>
                                                     <connections>
-                                                        <segue destination="Wd8-0Z-MPm" kind="show" id="ZDa-4V-0KV"/>
+                                                        <action selector="onFeedTap:" destination="Y7J-F2-0D4" eventType="touchUpInside" id="yMU-Kg-xFw"/>
                                                     </connections>
                                                 </button>
                                             </subviews>
@@ -515,24 +520,24 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="130" id="Wal-dL-Jny">
-                                        <rect key="frame" x="0.0" y="224" width="414" height="130"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="159" id="Wal-dL-Jny">
+                                        <rect key="frame" x="0.0" y="224" width="414" height="159"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Wal-dL-Jny" id="TIi-me-h8D">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="130"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="159"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Daily Horoscope" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RFH-Ru-fxz">
-                                                    <rect key="frame" x="10" y="5" width="177.5" height="30"/>
+                                                    <rect key="frame" x="10" y="5" width="380" height="30"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="30" id="JBU-6R-fT5"/>
+                                                    </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dgy-WO-pXe">
-                                                    <rect key="frame" x="10" y="36" width="392" height="81.5"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="width" constant="392" id="BSm-LK-6am"/>
-                                                    </constraints>
+                                                    <rect key="frame" x="10" y="36" width="380" height="108"/>
                                                     <string key="text">Things may be changing rapidly around you. Look before you leap, and go with the flow. Remember that the best decisions aren’t always made with the brain; sometimes they’re made with the heart.</string>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
@@ -541,30 +546,33 @@
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="RFH-Ru-fxz" firstAttribute="leading" secondItem="Dgy-WO-pXe" secondAttribute="leading" id="8fT-As-2zf"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="Dgy-WO-pXe" secondAttribute="trailing" constant="4" id="Edc-5k-wjW"/>
                                                 <constraint firstItem="RFH-Ru-fxz" firstAttribute="top" secondItem="TIi-me-h8D" secondAttribute="topMargin" constant="-6" id="abg-ZY-oQh"/>
                                                 <constraint firstItem="Dgy-WO-pXe" firstAttribute="top" secondItem="RFH-Ru-fxz" secondAttribute="bottom" constant="1" id="eam-CG-NNj"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="RFH-Ru-fxz" secondAttribute="trailing" constant="4" id="gFM-P0-eJI"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="Dgy-WO-pXe" secondAttribute="bottom" constant="4" id="lRg-a1-StI"/>
                                                 <constraint firstItem="RFH-Ru-fxz" firstAttribute="leading" secondItem="TIi-me-h8D" secondAttribute="leadingMargin" constant="-10" id="qDo-av-ktb"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="85" id="Hwh-t4-ekW">
-                                        <rect key="frame" x="0.0" y="354" width="414" height="85"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="100" id="Hwh-t4-ekW">
+                                        <rect key="frame" x="0.0" y="383" width="414" height="100"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Hwh-t4-ekW" id="Fzh-W6-B90">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="85"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="100"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Who Are You Compatible With" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wds-kT-Car">
-                                                    <rect key="frame" x="10" y="5" width="325.5" height="30"/>
+                                                    <rect key="frame" x="10" y="15" width="380" height="30"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="30" id="spP-Ta-Pm9"/>
+                                                    </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Based on your signs, you are the most compatible with other Leos, Aries, and Sagittarius " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8hp-rF-qUJ">
-                                                    <rect key="frame" x="10" y="34" width="392" height="41"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="width" constant="392" id="YK1-SA-aJ0"/>
-                                                    </constraints>
+                                                    <rect key="frame" x="10" y="47" width="380" height="49"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -572,30 +580,33 @@
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="Wds-kT-Car" firstAttribute="leading" secondItem="Fzh-W6-B90" secondAttribute="leadingMargin" constant="-10" id="UvT-Jh-wgR"/>
-                                                <constraint firstItem="8hp-rF-qUJ" firstAttribute="top" secondItem="Wds-kT-Car" secondAttribute="bottom" constant="-1" id="X8l-1g-2he"/>
-                                                <constraint firstItem="Wds-kT-Car" firstAttribute="top" secondItem="Fzh-W6-B90" secondAttribute="topMargin" constant="-6" id="mxu-OR-K4U"/>
+                                                <constraint firstAttribute="bottom" secondItem="8hp-rF-qUJ" secondAttribute="bottom" constant="4" id="WW4-un-tzI"/>
+                                                <constraint firstItem="8hp-rF-qUJ" firstAttribute="top" secondItem="Wds-kT-Car" secondAttribute="bottom" constant="2" id="X8l-1g-2he"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="8hp-rF-qUJ" secondAttribute="trailing" constant="4" id="bFy-TU-ki3"/>
+                                                <constraint firstItem="Wds-kT-Car" firstAttribute="top" secondItem="Fzh-W6-B90" secondAttribute="topMargin" constant="4" id="mxu-OR-K4U"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="Wds-kT-Car" secondAttribute="trailing" constant="4" id="qZg-Uy-Ego"/>
                                                 <constraint firstItem="Wds-kT-Car" firstAttribute="leading" secondItem="8hp-rF-qUJ" secondAttribute="leading" id="wYt-DL-iZV"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="190" id="7c3-eO-Thw">
-                                        <rect key="frame" x="0.0" y="439" width="414" height="190"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="235" id="7c3-eO-Thw">
+                                        <rect key="frame" x="0.0" y="483" width="414" height="235"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="7c3-eO-Thw" id="qiC-nV-3dy">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="190"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="235"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your Sun " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MKi-Uh-YYG">
-                                                    <rect key="frame" x="10" y="5" width="102" height="30"/>
+                                                    <rect key="frame" x="10" y="5" width="380" height="30"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="30" id="ctx-ur-tjz"/>
+                                                    </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CeK-6j-pEo">
-                                                    <rect key="frame" x="10" y="38" width="392" height="162.5"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="width" constant="392" id="ceU-nX-Kb9"/>
-                                                    </constraints>
+                                                    <rect key="frame" x="10" y="38" width="380" height="182"/>
                                                     <string key="text">The presence of Aries always marks the beginning of something energetic and turbulent. They are continuously looking for dynamic, speed and competition, always being the first in everything - from work to social gatherings. It is in their nature to take action, sometimes before they think about it well.
 </string>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -605,30 +616,33 @@
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="MKi-Uh-YYG" firstAttribute="top" secondItem="qiC-nV-3dy" secondAttribute="topMargin" constant="-6" id="Ewj-sx-Rb4"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="MKi-Uh-YYG" secondAttribute="trailing" constant="4" id="I83-nv-MYV"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="CeK-6j-pEo" secondAttribute="bottom" constant="4" id="Lfn-Vm-hli"/>
                                                 <constraint firstItem="CeK-6j-pEo" firstAttribute="top" secondItem="MKi-Uh-YYG" secondAttribute="bottom" constant="3" id="Nta-Lz-rc2"/>
                                                 <constraint firstItem="MKi-Uh-YYG" firstAttribute="leading" secondItem="CeK-6j-pEo" secondAttribute="leading" id="Spm-Pn-NRd"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="CeK-6j-pEo" secondAttribute="trailing" constant="4" id="afv-wv-qdP"/>
                                                 <constraint firstItem="MKi-Uh-YYG" firstAttribute="leading" secondItem="qiC-nV-3dy" secondAttribute="leadingMargin" constant="-10" id="p43-am-dtV"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="176" id="rTS-hI-JO2">
-                                        <rect key="frame" x="0.0" y="629" width="414" height="176"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="264" id="rTS-hI-JO2">
+                                        <rect key="frame" x="0.0" y="718" width="414" height="264"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="rTS-hI-JO2" id="4aq-VZ-Ip2">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="176"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="264"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your Moon" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4iL-Mx-JhA">
-                                                    <rect key="frame" x="10" y="5" width="116" height="30"/>
+                                                    <rect key="frame" x="10" y="5" width="380" height="30"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="30" id="iSD-2K-lXy"/>
+                                                    </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uWy-0b-rY4">
-                                                    <rect key="frame" x="10" y="38" width="392" height="142.5"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="width" constant="392" id="xfH-G6-GeX"/>
-                                                    </constraints>
+                                                    <rect key="frame" x="10" y="38" width="380" height="211"/>
                                                     <string key="text">Pleasant conversation and lively discussions are both likely today as testing the validity of ideas is part of the balancing energy of Libra. Generally it's a good time to socialise in beautiful, environments, playing or listening to music, dancing, reading poetry aloud, or visiting an art gallery together.
 </string>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -637,31 +651,34 @@
                                                 </label>
                                             </subviews>
                                             <constraints>
+                                                <constraint firstAttribute="trailingMargin" secondItem="uWy-0b-rY4" secondAttribute="trailing" constant="4" id="2Ao-Dt-06W"/>
                                                 <constraint firstItem="4iL-Mx-JhA" firstAttribute="leading" secondItem="uWy-0b-rY4" secondAttribute="leading" id="5kH-1n-J5W"/>
                                                 <constraint firstItem="4iL-Mx-JhA" firstAttribute="leading" secondItem="4aq-VZ-Ip2" secondAttribute="leadingMargin" constant="-10" id="Ux6-77-VOC"/>
                                                 <constraint firstItem="4iL-Mx-JhA" firstAttribute="top" secondItem="4aq-VZ-Ip2" secondAttribute="topMargin" constant="-6" id="e8g-nI-ejT"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="4iL-Mx-JhA" secondAttribute="trailing" constant="4" id="flH-Xt-E4G"/>
                                                 <constraint firstItem="uWy-0b-rY4" firstAttribute="top" secondItem="4iL-Mx-JhA" secondAttribute="bottom" constant="3" id="mVh-gO-7Um"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="uWy-0b-rY4" secondAttribute="bottom" constant="4" id="vpW-qn-xt5"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="116" id="88R-8n-BOe">
-                                        <rect key="frame" x="0.0" y="805" width="414" height="116"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="139" id="88R-8n-BOe">
+                                        <rect key="frame" x="0.0" y="982" width="414" height="139"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="88R-8n-BOe" id="jD3-E7-Hqu">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="116"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="139"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your Rising" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cnq-yA-5Pr">
-                                                    <rect key="frame" x="10" y="5" width="120" height="49"/>
+                                                    <rect key="frame" x="8" y="5" width="408" height="30"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="30" id="Uu2-LG-3eW"/>
+                                                    </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="StI-xF-pSZ">
-                                                    <rect key="frame" x="11" y="48" width="392" height="101.5"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="width" constant="392" id="iO6-cQ-Lyt"/>
-                                                    </constraints>
+                                                    <rect key="frame" x="-2" y="48" width="404" height="101.5"/>
                                                     <string key="text">Your ascendant makes you generous, ambitious, proud and –usually- very talented. You like to be admired and be the center of attention, although self confidence is hardly ever an issue for you and you always seem to be young at heart.</string>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
@@ -669,10 +686,13 @@
                                                 </label>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="Cnq-yA-5Pr" firstAttribute="leading" secondItem="jD3-E7-Hqu" secondAttribute="leadingMargin" constant="-10" id="F6b-Ve-5dp"/>
-                                                <constraint firstItem="Cnq-yA-5Pr" firstAttribute="leading" secondItem="StI-xF-pSZ" secondAttribute="leading" constant="-1" id="R3M-me-niI"/>
+                                                <constraint firstItem="Cnq-yA-5Pr" firstAttribute="leading" secondItem="jD3-E7-Hqu" secondAttribute="leadingMargin" id="EdK-rE-zMN"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="StI-xF-pSZ" secondAttribute="trailing" constant="4" id="OVB-XR-8gr"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="StI-xF-pSZ" secondAttribute="bottom" constant="4" id="R8s-c7-GDY"/>
                                                 <constraint firstAttribute="bottomMargin" secondItem="Cnq-yA-5Pr" secondAttribute="bottom" constant="51" id="bwh-mn-qtQ"/>
+                                                <constraint firstItem="StI-xF-pSZ" firstAttribute="leading" secondItem="jD3-E7-Hqu" secondAttribute="leadingMargin" constant="-10" id="ddE-Zn-kT7"/>
                                                 <constraint firstItem="Cnq-yA-5Pr" firstAttribute="top" secondItem="jD3-E7-Hqu" secondAttribute="topMargin" constant="-6" id="rnQ-v1-WNf"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="Cnq-yA-5Pr" secondAttribute="trailing" constant="-10" id="vfx-Tt-PH8"/>
                                                 <constraint firstItem="StI-xF-pSZ" firstAttribute="top" secondItem="jD3-E7-Hqu" secondAttribute="topMargin" constant="37" id="yRh-FN-1zk"/>
                                             </constraints>
                                         </tableViewCellContentView>
@@ -1252,8 +1272,7 @@
         <image name="woman" width="612" height="406"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="hJJ-w1-fz6"/>
-        <segue reference="rOv-mu-Tiy"/>
-        <segue reference="ZDa-4V-0KV"/>
+        <segue reference="3XO-Yj-TRf"/>
+        <segue reference="fAR-w9-dbo"/>
     </inferredMetricsTieBreakers>
 </document>
