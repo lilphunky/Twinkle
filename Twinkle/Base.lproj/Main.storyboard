@@ -916,7 +916,7 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="City name placeholder" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="siE-PK-a5A">
+                                                <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="City name placeholder" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="siE-PK-a5A">
                                                     <rect key="frame" x="28" y="48" width="358" height="21"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="21" id="S28-Nd-tiA"/>
@@ -925,10 +925,10 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yXw-Xd-K92">
-                                                    <rect key="frame" x="28" y="77" width="72" height="21"/>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yXw-Xd-K92">
+                                                    <rect key="frame" x="28" y="77" width="140" height="21"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="width" constant="72" id="HB6-Zb-Mko"/>
+                                                        <constraint firstAttribute="width" constant="140" id="HB6-Zb-Mko"/>
                                                         <constraint firstAttribute="height" constant="21" id="l2L-DW-UU2"/>
                                                     </constraints>
                                                     <state key="normal" title="Select city"/>
@@ -992,6 +992,7 @@
                         <outlet property="firstName" destination="xcO-vl-CaZ" id="EWO-mh-2sP"/>
                         <outlet property="lastName" destination="tit-Rc-rOF" id="Tkp-xK-2In"/>
                         <outlet property="passwordField" destination="R8k-Pd-bjt" id="FUh-HL-7ZH"/>
+                        <outlet property="selectCityBTN" destination="yXw-Xd-K92" id="YBH-6s-5m1"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="not-Yp-abP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

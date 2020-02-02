@@ -21,6 +21,7 @@ class SignUpTableViewController: UITableViewController {
     @IBOutlet weak var birthdayPicker: UIDatePicker!
     @IBOutlet weak var birthtimePicker: UIDatePicker!
     @IBOutlet weak var cityLabel: UILabel!
+    @IBOutlet weak var selectCityBTN: UIButton!
     
     var cityLat: Double = 0.0
     var cityLong: Double = 0.0
@@ -110,6 +111,7 @@ extension SignUpTableViewController: GMSAutocompleteViewControllerDelegate {
   func viewController(_ viewController: GMSAutocompleteViewController, didAutocompleteWith place: GMSPlace) {
     cityLabel.isHidden = false
     cityLabel.text = place.name
+    selectCityBTN.setTitle("Change city", for: .normal)
     cityLat = place.coordinate.latitude
     cityLong = place.coordinate.longitude
     dismiss(animated: true, completion: nil)
