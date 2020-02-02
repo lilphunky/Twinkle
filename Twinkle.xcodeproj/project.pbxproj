@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		594BAAAC4C19A5883A4A51CF /* Pods_TwinkleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4C16E023E35E6E8F9CB15C8 /* Pods_TwinkleTests.framework */; };
+		7E35E78863FB8F2B7A3AF917 /* Pods_Twinkle_TwinkleUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4615B0DF6650E674EC9CC812 /* Pods_Twinkle_TwinkleUITests.framework */; };
 		B48B0EE723E6364C00CDF72D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48B0EE623E6364C00CDF72D /* AppDelegate.swift */; };
 		B48B0EE923E6364C00CDF72D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48B0EE823E6364C00CDF72D /* SceneDelegate.swift */; };
 		B48B0EEB23E6364C00CDF72D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48B0EEA23E6364C00CDF72D /* ViewController.swift */; };
@@ -15,6 +17,8 @@
 		B48B0EF323E6364E00CDF72D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B48B0EF123E6364E00CDF72D /* LaunchScreen.storyboard */; };
 		B48B0EFE23E6364E00CDF72D /* TwinkleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48B0EFD23E6364E00CDF72D /* TwinkleTests.swift */; };
 		B48B0F0923E6364E00CDF72D /* TwinkleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48B0F0823E6364E00CDF72D /* TwinkleUITests.swift */; };
+		B48B0F1723E64BF600CDF72D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B48B0F1623E64BF500CDF72D /* GoogleService-Info.plist */; };
+		EE254D4DEAEF8FED19394446 /* Pods_Twinkle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EE4D6FF31537C9EDF0EDF09 /* Pods_Twinkle.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +39,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2EE4D6FF31537C9EDF0EDF09 /* Pods_Twinkle.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Twinkle.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4615B0DF6650E674EC9CC812 /* Pods_Twinkle_TwinkleUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Twinkle_TwinkleUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		654B9FA89EBFFC0EBBA36D48 /* Pods-Twinkle.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Twinkle.release.xcconfig"; path = "Target Support Files/Pods-Twinkle/Pods-Twinkle.release.xcconfig"; sourceTree = "<group>"; };
+		745BD5A5A91EDCA37B106201 /* Pods-Twinkle-TwinkleUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Twinkle-TwinkleUITests.release.xcconfig"; path = "Target Support Files/Pods-Twinkle-TwinkleUITests/Pods-Twinkle-TwinkleUITests.release.xcconfig"; sourceTree = "<group>"; };
+		8EF35A02720547F39B950562 /* Pods-TwinkleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TwinkleTests.debug.xcconfig"; path = "Target Support Files/Pods-TwinkleTests/Pods-TwinkleTests.debug.xcconfig"; sourceTree = "<group>"; };
+		A2B6AD24AB563F764767EA34 /* Pods-TwinkleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TwinkleTests.release.xcconfig"; path = "Target Support Files/Pods-TwinkleTests/Pods-TwinkleTests.release.xcconfig"; sourceTree = "<group>"; };
 		B48B0EE323E6364C00CDF72D /* Twinkle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Twinkle.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B48B0EE623E6364C00CDF72D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B48B0EE823E6364C00CDF72D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +59,10 @@
 		B48B0F0423E6364E00CDF72D /* TwinkleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TwinkleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B48B0F0823E6364E00CDF72D /* TwinkleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwinkleUITests.swift; sourceTree = "<group>"; };
 		B48B0F0A23E6364E00CDF72D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B48B0F1623E64BF500CDF72D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		CA6C7C566A6DE359F83D42C1 /* Pods-Twinkle-TwinkleUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Twinkle-TwinkleUITests.debug.xcconfig"; path = "Target Support Files/Pods-Twinkle-TwinkleUITests/Pods-Twinkle-TwinkleUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		CF36A9489C8885E91223AF92 /* Pods-Twinkle.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Twinkle.debug.xcconfig"; path = "Target Support Files/Pods-Twinkle/Pods-Twinkle.debug.xcconfig"; sourceTree = "<group>"; };
+		E4C16E023E35E6E8F9CB15C8 /* Pods_TwinkleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TwinkleTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EE254D4DEAEF8FED19394446 /* Pods_Twinkle.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				594BAAAC4C19A5883A4A51CF /* Pods_TwinkleTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,12 +86,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7E35E78863FB8F2B7A3AF917 /* Pods_Twinkle_TwinkleUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B09A860ADD4AF1EF205C3DDE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2EE4D6FF31537C9EDF0EDF09 /* Pods_Twinkle.framework */,
+				4615B0DF6650E674EC9CC812 /* Pods_Twinkle_TwinkleUITests.framework */,
+				E4C16E023E35E6E8F9CB15C8 /* Pods_TwinkleTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		B48B0EDA23E6364C00CDF72D = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +110,8 @@
 				B48B0EFC23E6364E00CDF72D /* TwinkleTests */,
 				B48B0F0723E6364E00CDF72D /* TwinkleUITests */,
 				B48B0EE423E6364C00CDF72D /* Products */,
+				E6926603A15DF67E5DA7440D /* Pods */,
+				B09A860ADD4AF1EF205C3DDE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -106,6 +135,7 @@
 				B48B0EEF23E6364E00CDF72D /* Assets.xcassets */,
 				B48B0EF123E6364E00CDF72D /* LaunchScreen.storyboard */,
 				B48B0EF423E6364E00CDF72D /* Info.plist */,
+				B48B0F1623E64BF500CDF72D /* GoogleService-Info.plist */,
 			);
 			path = Twinkle;
 			sourceTree = "<group>";
@@ -128,6 +158,20 @@
 			path = TwinkleUITests;
 			sourceTree = "<group>";
 		};
+		E6926603A15DF67E5DA7440D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CF36A9489C8885E91223AF92 /* Pods-Twinkle.debug.xcconfig */,
+				654B9FA89EBFFC0EBBA36D48 /* Pods-Twinkle.release.xcconfig */,
+				CA6C7C566A6DE359F83D42C1 /* Pods-Twinkle-TwinkleUITests.debug.xcconfig */,
+				745BD5A5A91EDCA37B106201 /* Pods-Twinkle-TwinkleUITests.release.xcconfig */,
+				8EF35A02720547F39B950562 /* Pods-TwinkleTests.debug.xcconfig */,
+				A2B6AD24AB563F764767EA34 /* Pods-TwinkleTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +179,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B48B0F0D23E6364E00CDF72D /* Build configuration list for PBXNativeTarget "Twinkle" */;
 			buildPhases = (
+				8255E7EEAECE5F9D97CE8CF6 /* [CP] Check Pods Manifest.lock */,
 				B48B0EDF23E6364C00CDF72D /* Sources */,
 				B48B0EE023E6364C00CDF72D /* Frameworks */,
 				B48B0EE123E6364C00CDF72D /* Resources */,
+				90098694A329F43BD76A5C78 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -152,6 +198,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B48B0F1023E6364E00CDF72D /* Build configuration list for PBXNativeTarget "TwinkleTests" */;
 			buildPhases = (
+				2D279D1B07B4725959231FF9 /* [CP] Check Pods Manifest.lock */,
 				B48B0EF523E6364E00CDF72D /* Sources */,
 				B48B0EF623E6364E00CDF72D /* Frameworks */,
 				B48B0EF723E6364E00CDF72D /* Resources */,
@@ -170,9 +217,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B48B0F1323E6364E00CDF72D /* Build configuration list for PBXNativeTarget "TwinkleUITests" */;
 			buildPhases = (
+				7D0A57D5257EEA29DCFD1DFF /* [CP] Check Pods Manifest.lock */,
 				B48B0F0023E6364E00CDF72D /* Sources */,
 				B48B0F0123E6364E00CDF72D /* Frameworks */,
 				B48B0F0223E6364E00CDF72D /* Resources */,
+				B73A4CE3A465583D4F633D6F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -233,6 +282,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B48B0EF323E6364E00CDF72D /* LaunchScreen.storyboard in Resources */,
+				B48B0F1723E64BF600CDF72D /* GoogleService-Info.plist in Resources */,
 				B48B0EF023E6364E00CDF72D /* Assets.xcassets in Resources */,
 				B48B0EEE23E6364C00CDF72D /* Main.storyboard in Resources */,
 			);
@@ -253,6 +303,109 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2D279D1B07B4725959231FF9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TwinkleTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7D0A57D5257EEA29DCFD1DFF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Twinkle-TwinkleUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8255E7EEAECE5F9D97CE8CF6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Twinkle-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		90098694A329F43BD76A5C78 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Twinkle/Pods-Twinkle-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Twinkle/Pods-Twinkle-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Twinkle/Pods-Twinkle-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B73A4CE3A465583D4F633D6F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Twinkle-TwinkleUITests/Pods-Twinkle-TwinkleUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Twinkle-TwinkleUITests/Pods-Twinkle-TwinkleUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Twinkle-TwinkleUITests/Pods-Twinkle-TwinkleUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B48B0EDF23E6364C00CDF72D /* Sources */ = {
@@ -432,6 +585,7 @@
 		};
 		B48B0F0E23E6364E00CDF72D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CF36A9489C8885E91223AF92 /* Pods-Twinkle.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -450,6 +604,7 @@
 		};
 		B48B0F0F23E6364E00CDF72D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 654B9FA89EBFFC0EBBA36D48 /* Pods-Twinkle.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -468,6 +623,7 @@
 		};
 		B48B0F1123E6364E00CDF72D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8EF35A02720547F39B950562 /* Pods-TwinkleTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -490,6 +646,7 @@
 		};
 		B48B0F1223E6364E00CDF72D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A2B6AD24AB563F764767EA34 /* Pods-TwinkleTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -512,6 +669,7 @@
 		};
 		B48B0F1423E6364E00CDF72D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CA6C7C566A6DE359F83D42C1 /* Pods-Twinkle-TwinkleUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -532,6 +690,7 @@
 		};
 		B48B0F1523E6364E00CDF72D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 745BD5A5A91EDCA37B106201 /* Pods-Twinkle-TwinkleUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

@@ -1,0 +1,6 @@
+framework module Pods_Twinkle {
+  umbrella header "Pods-Twinkle-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,6 @@
+framework module Pods_Twinkle_TwinkleUITests {
+  umbrella header "Pods-Twinkle-TwinkleUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
