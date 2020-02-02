@@ -12,7 +12,7 @@
             <objects>
                 <viewController id="Wd8-0Z-MPm" customClass="MatchViewViewController" customModule="Twinkle" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="gVB-1K-nf6">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Matches View Controller" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aAO-St-1yc">
@@ -117,15 +117,27 @@
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GK3-5V-1Bt">
                                                 <rect key="frame" x="0.0" y="87.5" width="285" height="30"/>
                                                 <state key="normal" title="See More"/>
+                                                <connections>
+                                                    <segue destination="Eb9-Fl-NfA" kind="show" id="LPl-O4-sXE"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
                                 </subviews>
                             </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YKY-fM-Swz">
+                                <rect key="frame" x="33" y="24" width="44" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Profile"/>
+                                <connections>
+                                    <segue destination="Y7J-F2-0D4" kind="show" id="fAR-w9-dbo"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="abt-IZ-RNv"/>
                     </view>
+                    <navigationItem key="navigationItem" id="WYj-Jj-twe"/>
                     <connections>
                         <outlet property="matchBio" destination="Y6A-Ye-vhm" id="cIV-Pa-mrl"/>
                         <outlet property="matchImage" destination="HNY-II-Yen" id="dhB-vx-Q1l"/>
@@ -137,21 +149,29 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6L5-oF-sGQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="137.68115942028987" y="838.39285714285711"/>
+            <point key="canvasLocation" x="1183" y="810"/>
         </scene>
         <!--Match Profile Table View Controller-->
         <scene sceneID="0rU-bp-BUu">
             <objects>
                 <tableViewController id="Eb9-Fl-NfA" customClass="MatchProfileTableViewController" customModule="Twinkle" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="7gj-Jl-HFs">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <button key="tableHeaderView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="92F-mD-Bg8">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <state key="normal" title="Matches"/>
+                            <connections>
+                                <segue destination="Wd8-0Z-MPm" kind="show" id="3XO-Yj-TRf"/>
+                            </connections>
+                        </button>
                         <sections>
                             <tableViewSection id="upe-Hn-ibH">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="104" id="54d-4i-lMG">
-                                        <rect key="frame" x="0.0" y="28" width="414" height="104"/>
+                                        <rect key="frame" x="0.0" y="72" width="414" height="104"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="54d-4i-lMG" id="ZY5-3O-Zhg">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="104"/>
@@ -229,7 +249,7 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="132" id="XsS-FI-6mA">
-                                        <rect key="frame" x="0.0" y="132" width="414" height="132"/>
+                                        <rect key="frame" x="0.0" y="176" width="414" height="132"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="XsS-FI-6mA" id="KFs-Q4-iR4">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="132"/>
@@ -253,7 +273,7 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="120" id="SFd-2H-P87">
-                                        <rect key="frame" x="0.0" y="264" width="414" height="120"/>
+                                        <rect key="frame" x="0.0" y="308" width="414" height="120"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="SFd-2H-P87" id="tCR-bs-j4m">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="120"/>
@@ -277,7 +297,7 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="110" id="LAF-GP-79K">
-                                        <rect key="frame" x="0.0" y="384" width="414" height="110"/>
+                                        <rect key="frame" x="0.0" y="428" width="414" height="110"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="LAF-GP-79K" id="yOn-4D-wBG">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="110"/>
@@ -308,6 +328,7 @@
                             <outlet property="delegate" destination="Eb9-Fl-NfA" id="n4p-bK-GBO"/>
                         </connections>
                     </tableView>
+                    <navigationItem key="navigationItem" id="fX3-qe-ey3"/>
                     <connections>
                         <outlet property="matchBio" destination="1Zm-u4-4Lb" id="j9D-Eh-xFG"/>
                         <outlet property="matchCompatiable" destination="NgR-lR-DMB" id="UWO-Lp-CrR"/>
@@ -321,14 +342,14 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="a9Q-VO-JDm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="896" y="838"/>
+            <point key="canvasLocation" x="306" y="1406"/>
         </scene>
         <!--User Profile Table View Controller-->
         <scene sceneID="hTb-1O-tyl">
             <objects>
                 <tableViewController id="Y7J-F2-0D4" customClass="UserProfileTableViewController" customModule="Twinkle" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="cop-Gj-VvX">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <sections>
@@ -415,6 +436,14 @@
                                                     <state key="normal" title="Edit"/>
                                                     <connections>
                                                         <segue destination="KMU-0J-T0l" kind="show" id="hJJ-w1-fz6"/>
+                                                    </connections>
+                                                </button>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="PSZ-fG-QLh">
+                                                    <rect key="frame" x="14" y="0.0" width="59" height="30"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <state key="normal" title="Matches"/>
+                                                    <connections>
+                                                        <segue destination="Wd8-0Z-MPm" kind="show" id="ZDa-4V-0KV"/>
                                                     </connections>
                                                 </button>
                                             </subviews>
@@ -548,6 +577,7 @@
                             <outlet property="delegate" destination="Y7J-F2-0D4" id="GDC-M9-1HO"/>
                         </connections>
                     </tableView>
+                    <navigationItem key="navigationItem" id="KGP-oq-c0z"/>
                     <connections>
                         <outlet property="userCompatiable" destination="8hp-rF-qUJ" id="HVt-vh-YtU"/>
                         <outlet property="userDaily" destination="Dgy-WO-pXe" id="ZMD-YR-ykP"/>
@@ -562,7 +592,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="f1k-cQ-OAD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1628" y="838"/>
+            <point key="canvasLocation" x="1045" y="1728"/>
         </scene>
         <!--User Edit Table View Controller-->
         <scene sceneID="LqK-oq-BHQ">
@@ -610,6 +640,9 @@
                                                         <constraint firstAttribute="height" constant="30" id="7lO-fZ-gTd"/>
                                                     </constraints>
                                                     <state key="normal" title="Cancel"/>
+                                                    <connections>
+                                                        <action selector="onCancel:" destination="KMU-0J-T0l" eventType="touchUpInside" id="ljz-Mc-fuv"/>
+                                                    </connections>
                                                 </button>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9j7-S9-QsG">
                                                     <rect key="frame" x="97" y="48" width="220" height="114"/>
@@ -694,7 +727,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7ND-gN-1KA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2356.521739130435" y="837.72321428571422"/>
+            <point key="canvasLocation" x="2264" y="1459"/>
         </scene>
         <!--Login View Controller-->
         <scene sceneID="MCF-Pi-JOh">
@@ -1056,4 +1089,7 @@
     <resources>
         <image name="title_backdrop" width="828" height="1792"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="3XO-Yj-TRf"/>
+    </inferredMetricsTieBreakers>
 </document>
