@@ -735,10 +735,10 @@
             </objects>
             <point key="canvasLocation" x="866.66666666666674" y="120.53571428571428"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Sign Up Table View Controller-->
         <scene sceneID="H2g-Ps-JAV">
             <objects>
-                <tableViewController id="f6c-03-9sy" sceneMemberID="viewController">
+                <tableViewController id="f6c-03-9sy" customClass="SignUpTableViewController" customModule="Twinkle" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="evx-bO-R0y">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -827,7 +827,7 @@
                                                         <constraint firstAttribute="height" constant="34" id="i3s-jw-gY7"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                    <textInputTraits key="textInputTraits"/>
+                                                    <textInputTraits key="textInputTraits" textContentType="email"/>
                                                 </textField>
                                                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="R8k-Pd-bjt">
                                                     <rect key="frame" x="28" y="119" width="358" height="34"/>
@@ -835,7 +835,7 @@
                                                         <constraint firstAttribute="height" constant="34" id="zBe-lE-3n2"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                    <textInputTraits key="textInputTraits"/>
+                                                    <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
                                                 </textField>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h11-v7-H3P">
                                                     <rect key="frame" x="28" y="90" width="358" height="21"/>
@@ -850,7 +850,7 @@
                                             <constraints>
                                                 <constraint firstItem="YHc-i9-SK0" firstAttribute="top" secondItem="iHy-hm-gyo" secondAttribute="bottom" constant="8" id="0yu-3C-2VO"/>
                                                 <constraint firstItem="R8k-Pd-bjt" firstAttribute="leading" secondItem="qoT-JX-1S4" secondAttribute="leadingMargin" constant="8" id="4fR-dE-st5"/>
-                                                <constraint firstItem="R8k-Pd-bjt" firstAttribute="bottom" secondItem="qoT-JX-1S4" secondAttribute="bottomMargin" constant="8" id="JwH-dT-OWr"/>
+                                                <constraint firstItem="R8k-Pd-bjt" firstAttribute="bottom" secondItem="qoT-JX-1S4" secondAttribute="bottomMargin" constant="0.80000000000000004" id="NCQ-jO-sfi"/>
                                                 <constraint firstAttribute="trailingMargin" secondItem="R8k-Pd-bjt" secondAttribute="trailing" constant="8" id="TL9-Is-Drn"/>
                                                 <constraint firstItem="iHy-hm-gyo" firstAttribute="top" secondItem="qoT-JX-1S4" secondAttribute="topMargin" constant="8" id="WBZ-6I-724"/>
                                                 <constraint firstItem="R8k-Pd-bjt" firstAttribute="top" secondItem="h11-v7-H3P" secondAttribute="bottom" constant="8" id="Xee-8q-B1n"/>
@@ -954,6 +954,9 @@
                                                         <constraint firstAttribute="height" constant="21" id="l2L-DW-UU2"/>
                                                     </constraints>
                                                     <state key="normal" title="Select city"/>
+                                                    <connections>
+                                                        <action selector="selectCity:" destination="f6c-03-9sy" eventType="touchUpInside" id="1PQ-Jz-K7G"/>
+                                                    </connections>
                                                 </button>
                                             </subviews>
                                             <constraints>
@@ -969,6 +972,32 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="nhc-Oe-xLS">
+                                        <rect key="frame" x="0.0" y="866" width="414" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="nhc-Oe-xLS" id="WNz-D1-vC7">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o37-0U-JYv">
+                                                    <rect key="frame" x="16" y="19" width="382" height="21"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="21" id="yVM-PM-1TN"/>
+                                                    </constraints>
+                                                    <state key="normal" title="Save Profile"/>
+                                                    <connections>
+                                                        <action selector="saveProfile:" destination="f6c-03-9sy" eventType="touchUpInside" id="oh1-d0-YVk"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="o37-0U-JYv" firstAttribute="leading" secondItem="WNz-D1-vC7" secondAttribute="leadingMargin" constant="8" id="8AV-YO-jBP"/>
+                                                <constraint firstItem="o37-0U-JYv" firstAttribute="top" secondItem="WNz-D1-vC7" secondAttribute="topMargin" constant="8" id="PeT-eK-S6W"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="o37-0U-JYv" secondAttribute="bottom" constant="8" id="cSp-Pg-ZqO"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="o37-0U-JYv" secondAttribute="trailing" constant="8" id="yHL-ht-FcM"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
                                 </cells>
                             </tableViewSection>
                         </sections>
@@ -977,10 +1006,18 @@
                             <outlet property="delegate" destination="f6c-03-9sy" id="8ST-d7-GLK"/>
                         </connections>
                     </tableView>
+                    <connections>
+                        <outlet property="birthdayPicker" destination="FIq-Fd-xzW" id="hPN-Ri-pE7"/>
+                        <outlet property="birthtimePicker" destination="EsK-CD-xLO" id="ON4-dO-C5s"/>
+                        <outlet property="emailField" destination="YHc-i9-SK0" id="eom-Oa-7rk"/>
+                        <outlet property="firstName" destination="xcO-vl-CaZ" id="EWO-mh-2sP"/>
+                        <outlet property="lastName" destination="tit-Rc-rOF" id="Tkp-xK-2In"/>
+                        <outlet property="passwordField" destination="R8k-Pd-bjt" id="FUh-HL-7ZH"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="not-Yp-abP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2377" y="136"/>
+            <point key="canvasLocation" x="1690" y="121"/>
         </scene>
     </scenes>
 </document>

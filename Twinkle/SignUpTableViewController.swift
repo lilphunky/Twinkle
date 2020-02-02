@@ -7,24 +7,55 @@
 //
 
 import UIKit
+import Firebase
 
 class SignUpTableViewController: UITableViewController {
+    
+    var ref: DatabaseReference!
 
+    @IBOutlet weak var firstName: UITextField!
+    @IBOutlet weak var lastName: UITextField!
+    @IBOutlet weak var emailField: UITextField!
+    @IBOutlet weak var passwordField: UITextField!
+    @IBOutlet weak var birthdayPicker: UIDatePicker!
+    @IBOutlet weak var birthtimePicker: UIDatePicker!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        ref = Database.database().reference()
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @IBAction func selectCity(_ sender: Any) {
     }
-    */
-
+    
+    @IBAction func saveProfile(_ sender: Any) {
+        
+        if fieldsNotEmpty() {
+            Auth.auth().createUser(withEmail: emailField.text!, password: passwordField.text!) { authResult, error in
+                if error != nil {
+                    let alert = UIAlertController(title: "Profile not saved", message: error?.localizedDescription, preferredStyle: .alert)
+                    alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+                    self.present(alert, animated: true, completion: nil)
+                    print(error?.localizedDescription)
+                } else {
+                    let userID = Auth.auth().currentUser?.uid
+                    self.ref.child("users").child(userID!).setValue(["first name": self.firstName.text!, "last name":self.lastName.text!])
+                }
+            }
+        }
+        
+    }
+    
+    func fieldsNotEmpty() -> Bool {
+        if firstName.text == "" || lastName.text == "" {
+            let alert = UIAlertController(title: "Profile not saved", message: "Please fill in your first and last name", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+            self.present(alert, animated: true, completion: nil)
+            return false
+        }
+        
+        return true
+    }
+    
 }
