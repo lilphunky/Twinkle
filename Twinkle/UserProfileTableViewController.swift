@@ -7,9 +7,11 @@
 //
 
 import UIKit
+import Firebase
 
 class UserProfileTableViewController: UITableViewController {
 
+    var ref: DatabaseReference!
     
     @IBOutlet weak var userImage: UIImageView!
     @IBOutlet weak var nameLabel: UILabel!
@@ -24,7 +26,22 @@ class UserProfileTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        ref = Database.database().reference()
 
+
+        fillInfo()
         }
 
+    func fillInfo() {
+        let userID = Auth.auth().currentUser?.uid
+        ref.child("users").child(userID!).observeSingleEvent(of: .value, with: { (snapshot) in
+            // Get user value
+            let value = snapshot.value as? NSDictionary
+            self.nameLabel.text = value?["first name"] as? String ?? ""
+
+            // ...
+          }) { (error) in
+            print(error.localizedDescription)
+        }
+    }
 }
